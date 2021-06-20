@@ -1,25 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+.black-section {
+  width: 100vw;
+  height: 300px;
+  background: #1e2124;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.black-section .inner-section {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.black-section .inner-section .black__childs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+  height: 60%;
+  text-align: center;
+}
+
+.black-section .inner-section .black__childs .black-section__text {
+  color: #d8d29f;
+}
+
+.black-section .inner-section .black-section__percentage {
+  background: #555;
+  border-radius: 30px;
+  width: 117px;
+  height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.black-section .inner-section .black-section__percentage .percentage-label {
+  padding: 10px;
+}
+
+.community-driven {
+  width: 100vw;
+  height: 300px;
+  background: #f4dbc5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.community-driven .community-driven__text {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.community-driven .community-driven__text .text-heading {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.community-driven .community-driven__text .text-about,
+.community-driven .community-driven__text .text-cursive {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.community-driven .community-driven__text .text-cursive {
+  font-family: Satisfy;
+}
+
+.middle-section {
+  width: 100vw;
+  height: 1000px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: lato;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
-.background img {
-  position: absolute;
-  z-index: -1;
-  width: 70%;
-  height: 40%;
+.main-division {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: overlap;
 }
 
 .boomBaby-icon img {
   height: 70px;
 }
 
+.background-image {
+  grid-area: overlap;
+  /* border: 4px solid black; */
+}
+
+.main-division__text {
+  width: 600px;
+  height: 380px;
+  border: 1px solid black;
+  grid-area: overlap;
+  margin: auto;
+}
+
 .navbar {
+  grid-area: overlap;
+  /* border: 4px solid black; */
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

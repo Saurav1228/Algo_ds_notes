@@ -1,20 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Signika+Negative&display=swap");
+@import "./blackSection";
+@import "./communityDriven";
+@import "./middleSection";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: lato;
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
-.background {
-  img {
-    position: absolute;
-    z-index: -1;
-    width: 70%;
-    height: 40%;
-  }
+.main-division {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: overlap;
 }
 
 .boomBaby-icon {
@@ -23,7 +32,23 @@ body {
   }
 }
 
+.background-image {
+  grid-area: overlap;
+  /* border: 4px solid black; */
+}
+
+.main-division__text {
+  width: 600px;
+  height: 380px;
+  border: 1px solid black;
+  grid-area: overlap;
+  margin: auto;
+}
+
 .navbar {
+  grid-area: overlap;
+  /* border: 4px solid black; */
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
